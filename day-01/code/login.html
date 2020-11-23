@@ -18,30 +18,27 @@
     </div>
     <!-- 登录注册区域 -->
     <div class="loginAndRegBox">
+        <!-- title区域 -->
         <div class="tite-box"></div>
         <!-- 登录的页面 -->
         <div class="login-box">
             <!-- 登录的表单 -->
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_login" action="">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入用户名"
+                    <input type="text" name="username" lay-verify="required" autocomplete="off" placeholder="请输入用户名"
                         class="layui-input">
                 </div>
-            </form>
-            <!-- 密码 -->
-            <form class="layui-form" action="">
+                <!-- 密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="password" lay-verify="title" autocomplete="off" placeholder="请输入密码"
-                        class="layui-input">
+                    <input type="password" name="password" lay-verify="required |pwd" autocomplete="off"
+                        placeholder="请输入密码" class="layui-input">
                 </div>
-            </form>
-            <!-- 登录 -->
-            <form class="layui-form" action="">
+                <!-- 登录 -->
                 <div class="layui-form-item">
-                    <button type="submit" class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit="">登录</button>
+                    <button class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit="">登录</button>
                 </div>
                 <div class="layui-form-item links ">
                     <a href="javascript:;" id="link_reg">去注册账号</a>
@@ -50,32 +47,26 @@
         </div>
         <!-- 注册的页面 -->
         <div class="reg-box">
-            <form class="layui-form" action="">
+            <form class="layui-form" id="form_reg" action="">
                 <!-- 用户名 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-username"></i>
-                    <input type="text" name="username" lay-verify="title" autocomplete="off" placeholder="请输入用户名"
+                    <input type="text" name="username" lay-verify="required" autocomplete="off" placeholder="请输入用户名"
                         class="layui-input">
                 </div>
-            </form>
-            <!-- 密码 -->
-            <form class="layui-form" action="">
+                <!-- 密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="password" lay-verify="title" autocomplete="off" placeholder="请输入密码"
-                        class="layui-input">
+                    <input type="password" name="password" lay-verify="required |pwd" autocomplete="off"
+                        placeholder="请输入密码" class="layui-input">
                 </div>
-            </form>
-            <!-- 确认密码 -->
-            <form class="layui-form" action="">
+                <!-- 确认密码 -->
                 <div class="layui-form-item">
                     <i class="layui-icon layui-icon-password"></i>
-                    <input type="password" name="password" lay-verify="title" autocomplete="off" placeholder="再次确认密码"
-                        class="layui-input">
+                    <input type="password" name="password" lay-verify="required |pwd|repwd" autocomplete="off"
+                        placeholder="再次确认密码" class="layui-input">
                 </div>
-            </form>
-            <!-- 注册 -->
-            <form class="layui-form" action="">
+                <!-- 注册 -->
                 <div class="layui-form-item">
                     <button type="submit" class="layui-btn layui-btn-normal layui-btn-fluid" lay-submit="">注册</button>
                 </div>
@@ -84,16 +75,13 @@
                 </div>
             </form>
         </div>
-
-
-
-
-
-
-        <!-- 导入jquery -->
-        <script src="assets/lib/jquery.js"></script>
-        <!-- 导入自己的js脚本 -->
-        <script src="assets/js/login.js"></script>
+    </div>
+    <!-- 导入layui js 文件 -->
+    <script src="assets/lib/layui/layui.all.js"></script>
+    <!-- 导入jquery -->
+    <script src="assets/lib/jquery.js"></script>
+    <!-- 导入自己的js脚本 -->
+    <script src="assets/js/login.js"></script>
 </body>
 
 </html>
