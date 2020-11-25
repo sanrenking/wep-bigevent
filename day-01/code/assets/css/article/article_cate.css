@@ -5,7 +5,7 @@ body {
 }
 
 body {
-    padding: 15px;
+    padding: 10px;
     background-color: #f2f3f5;
 }
 
@@ -20,4 +20,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#form-add,
+#form-edit {
+    padding-top: 20px;
+    padding-right: 30px;
 }
